@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab2_.Command
 {
-    class GamePoleController
+    public class GamePoleController
     {
         ICommand moveUp;
         ICommand moveLeft;
@@ -50,7 +50,7 @@ namespace Lab2_.Command
 
         public void Restore()
         {
-            this.restore.undo();
+            this.restore.execute();
         }
     }
 }

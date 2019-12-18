@@ -4,10 +4,18 @@ using System.Text;
 
 namespace Lab2_.Target
 {
-    class TDecoding : Targets
+    public class TDecoding : Targets
     {
         public TDecoding()
             : base("D")
         { }
+
+        public TNormalCreator TNormalCreator
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

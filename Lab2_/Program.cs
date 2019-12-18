@@ -9,7 +9,7 @@ using Lab2_.State;
 
 namespace Lab2_
 {
-    class Program
+    public class Program
     {
         
         static void Main(string[] args)

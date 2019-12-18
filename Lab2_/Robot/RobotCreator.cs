@@ -6,6 +6,6 @@ namespace Lab2_.Robot
 {
     public abstract class RobotCreator
     {
-        abstract public Robots Create(string name);
+        abstract public Robots Create();
     }
 }

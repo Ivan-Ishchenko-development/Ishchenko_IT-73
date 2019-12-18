@@ -14,7 +14,7 @@ namespace Lab2_.Target
             this.Name = name;
             Cargo = C_rand.Next(1, 200);
         }
-        
+
     }
-    
+
 }

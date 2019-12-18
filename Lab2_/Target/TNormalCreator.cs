@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab2_.Target
 {
-    class TNormalCreator : TargetsCreator
+    public class TNormalCreator : TargetsCreator
     {
         public override Targets Create()
         {

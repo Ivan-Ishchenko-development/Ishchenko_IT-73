@@ -9,14 +9,14 @@ using Lab2_.State;
 
 namespace Lab2_
 {
-    class GamePole
+    public class GamePole
     {
         public Robots robot;
         public Game game;
         private string emptyCell = " ";
         private string target = "N";
         //private List<string[]> frame  = new List<string[]>(); // Кадр
-        public int battery { get; private set; } = 0;
+        public int battery { get; set; } = 0;
         private string[,] frame;
         private int money = 0;
         private int chanceDecodingRand = 0;
@@ -65,7 +65,9 @@ namespace Lab2_
                 { "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#"}
 
             };
-            Render();                                                                                                                                                                                                     
+            Render();
+           /* Console.WriteLine("Ряд = " + frame.GetLength(0) + "Столбцы = " + frame.GetLength(1));
+            System.Threading.Thread.Sleep(1000);*/
         }
         public void Render()
         {
@@ -223,7 +225,8 @@ namespace Lab2_
         }
         public void Restore()
         {
-            game.GameHistory.History.Pop();
+            if(game.GameHistory.History.Count > 0)
+            RestoreGame(game.GameHistory.History.Pop());
             
         }
 
@@ -301,15 +304,15 @@ namespace Lab2_
                     {
                         Console.WriteLine("Декодеровка удалась");
                         if (robot.chanceDecoding <= 10) money += 100;
-                        if (robot.chanceDecoding <= 20) money += 90;
-                        if (robot.chanceDecoding <= 30) money += 80;
-                        if (robot.chanceDecoding <= 40) money += 70;
-                        if (robot.chanceDecoding <= 50) money += 60;
-                        if (robot.chanceDecoding <= 60) money += 50;
-                        if (robot.chanceDecoding <= 70) money += 40;
-                        if (robot.chanceDecoding <= 80) money += 30;
-                        if (robot.chanceDecoding <= 90) money += 20;
-                        if (robot.chanceDecoding <= 100) money += 10;
+                        else if (robot.chanceDecoding <= 20) money += 90;
+                        else if (robot.chanceDecoding <= 30) money += 80;
+                        else if (robot.chanceDecoding <= 40) money += 70;
+                        else if (robot.chanceDecoding <= 50) money += 60;
+                        else if (robot.chanceDecoding <= 60) money += 50;
+                        else if (robot.chanceDecoding <= 70) money += 40;
+                        else if (robot.chanceDecoding <= 80) money += 30;
+                        else if (robot.chanceDecoding <= 90) money += 20;
+                        else if (robot.chanceDecoding <= 100) money += 10;
                     }
                     System.Threading.Thread.Sleep(1000);
 
@@ -343,6 +346,9 @@ namespace Lab2_
                 }
             }
             else
+            {
+
+            }
                 overheat = 0;
         }
 
@@ -371,6 +377,21 @@ namespace Lab2_
         {
             return true;
         }
-        
+
+        public GamePoleController GamePoleController
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public GameHistory GameHistory
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

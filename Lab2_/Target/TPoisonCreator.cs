@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab2_.Target
 {
-    class TPoisonCreator : TargetsCreator
+    public class TPoisonCreator : TargetsCreator
     {
         public override Targets Create()
         {

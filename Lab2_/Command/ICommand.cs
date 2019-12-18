@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace Lab2_.Command
 {
-    interface ICommand
+    public interface ICommand
     {
         void execute();
         void undo();

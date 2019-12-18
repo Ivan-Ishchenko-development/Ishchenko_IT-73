@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab2_.Target
 {
-    class TDecodingCreator : TargetsCreator
+    public class TDecodingCreator : TargetsCreator
     {
         public override Targets Create()
         {

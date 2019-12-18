@@ -5,7 +5,7 @@ using Lab2_.State;
 
 namespace Lab2_
 {
-    class Memento
+    public class Memento
     {
         public string[,] Frame { get; private set; } = new string[20,30]; // Кадр
         public int Cargo { get; private set; }
@@ -24,7 +24,7 @@ namespace Lab2_
         }
     }
 
-    class GameHistory
+    public class GameHistory
     {
         public Stack<Memento> History { get; private set; }
         public GameHistory()

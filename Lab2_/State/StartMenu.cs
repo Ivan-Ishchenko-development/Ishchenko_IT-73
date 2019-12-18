@@ -5,8 +5,11 @@ using Lab2_.Robot;
 
 namespace Lab2_.State
 {
-    class StartMenu : IGameState
+    public class StartMenu : IGameState
+
     {
+        public ConsoleKey key { get; private set; }
+
         public void NextStage(Game game)
         {
             game.State = new GameProcess(game.Robot, game.pole);
@@ -15,11 +18,12 @@ namespace Lab2_.State
         }
         public void Turn(Game game, ConsoleKey key )
         {
-            Console.Clear();
-
+            //Почему при Console.Clear() не работает тест?
+            this.key = key;
+            
             if (key == ConsoleKey.S)
             {
-                
+                Console.Clear();
                 Console.WriteLine("   ____                ____                                       ");
                 Console.WriteLine("  |                   |                \\      /\\      /         ");
                 Console.WriteLine("  |     --Cyber       |____ --Smart     \\    /  \\    / --Working");
@@ -37,7 +41,7 @@ namespace Lab2_.State
                 
                 game.NextStage();
             }
-            else Console.WriteLine("Извините вы ввели что-то не правильно , повторите попытку.");
+            else Console.WriteLine("\n\nИзвините вы ввели что-то не правильно , повторите попытку.");
             
         }
     }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Lab2_.Command
 {
-    class GamePoleMoveLeftCommand : ICommand
+    public class GamePoleMoveLeftCommand : ICommand
     {
-        GamePole GamePole;
+
         public GamePoleMoveLeftCommand(GamePole b)
         {
             GamePole = b;

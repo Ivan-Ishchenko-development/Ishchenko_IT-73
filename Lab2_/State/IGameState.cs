@@ -5,7 +5,7 @@ using Lab2_.Robot;
 
 namespace Lab2_.State
 {
-    interface IGameState
+    public interface IGameState
     {
 
         void NextStage(Game game); 

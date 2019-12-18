@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Lab2_.Command
 {
-    class GamePoleRestoreCommand : ICommand
+    public class GamePoleRestoreCommand : ICommand
     {
-        GamePole GamePole;
+
         public GamePoleRestoreCommand(GamePole b)
         {
             GamePole = b;
@@ -14,7 +14,7 @@ namespace Lab2_.Command
 
         public void execute()
         {
-            this.GamePole.Save();
+            this.GamePole.Restore();
         }
 
         public void undo()

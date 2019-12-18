@@ -6,9 +6,9 @@ namespace Lab2_.Robot
 {
     public class SmartCreator : RobotCreator
     {
-        public override Robots Create(string name)
+        public override Robots Create()
         {
-            return new SmartRobot(name, "S");
+            return new SmartRobot( "S");
         }
     }
 }

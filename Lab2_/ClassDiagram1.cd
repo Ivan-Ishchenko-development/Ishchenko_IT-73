@@ -1,152 +1,284 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Lab2_.GamePole" Collapsed="true">
-    <Position X="6" Y="0.75" Width="1.5" />
+  <Class Name="Lab2_.Command.GamePoleController" Collapsed="true">
+    <Position X="11.5" Y="13.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AUGAAIIAAFAQEAAAIEgBEAgAAAAARAoYQNAAAQQAEAA=</HashCode>
-      <FileName>GamePole.cs</FileName>
+      <HashCode>AAEAAIABAACAAAIAAAACAAAAAAAAAAAIQAAACEAAAAA=</HashCode>
+      <FileName>Command\GamePoleController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab2_.Program" Collapsed="true">
-    <Position X="5.25" Y="5" Width="1.5" />
+  <Class Name="Lab2_.Command.GamePoleMoveDownCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="16.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAAAAAAAAQAAAMAAAAAAAAAAAAAAAQBAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleMoveDownCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Command.GamePoleMoveLeftCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleMoveLeftCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Command.GamePoleMoveRightCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleMoveRightCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Command.GamePoleMoveUpCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleMoveUpCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Command.GamePoleRestoreCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleRestoreCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Command.GamePoleSaveCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\GamePoleSaveCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.Robot.CyborgCreator" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\CyborgCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Robot.CyborgRopot">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <AssociationLine Name="CyborgCreator" Type="Lab2_.Robot.CyborgCreator" FixedFromPoint="true">
+      <Path>
+        <Point X="0.938" Y="10" />
+        <Point X="0.938" Y="7.691" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\CyborgRobot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CyborgCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Robot.RobotCreator" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\RobotCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Robot.Robots" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAUAAAAAAAEgAEAAAAAAAAAIAAEAAAAAAAAA=</HashCode>
+      <FileName>Robot\Robots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Robot.SmartCreator" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\SmartCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Robot.SmartRobot" Collapsed="true">
+    <Position X="5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\SmartRobot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SmartCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Robot.WorkingCreator" Collapsed="true">
+    <Position X="2.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\WorkingCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Robot.WorkingRobot" Collapsed="true">
+    <Position X="2.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Robot\WorkingRobot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="WorkingCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Target.Targets" Collapsed="true">
+    <Position X="10.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Target\Targets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Target.TargetsCreator" Collapsed="true">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TargetsCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Target.TDecoding" Collapsed="true">
+    <Position X="12.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TDecoding.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TNormalCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Target.TDecodingCreator" Collapsed="true">
+    <Position X="8" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TDecodingCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Target.TNormal" Collapsed="true">
+    <Position X="10.25" Y="10" Width="1.5" />
+    <AssociationLine Name="TPoisonCreator" Type="Lab2_.Target.TPoisonCreator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="10.346" />
+        <Point X="9.875" Y="10.346" />
+        <Point X="9.875" Y="7.625" />
+        <Point X="10.25" Y="7.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Target\TNormal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TPoisonCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Target.TNormalCreator" Collapsed="true">
+    <Position X="12.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TNormalCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.Target.TPoison" Collapsed="true">
+    <Position X="8" Y="10" Width="1.5" />
+    <AssociationLine Name="TDecodingCreator" Type="Lab2_.Target.TDecodingCreator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.312" Y="10" />
+        <Point X="8.312" Y="7.91" />
+        <Point X="8.312" Y="7.91" />
+        <Point X="8.312" Y="7.691" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TPoison.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TDecodingCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.Target.TPoisonCreator" Collapsed="true">
+    <Position X="10.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target\TPoisonCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab2_.State.EndGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAGAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>State\EndGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.State.Game" Collapsed="true">
+    <Position X="6.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkAQAAEAAAAAAAQAAAiAAAABAAAAAAABAAABAAAAAA=</HashCode>
+      <FileName>State\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Robot" />
+      <Property Name="pole" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lab2_.State.GameProcess" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAAGAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>State\GameProcess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.State.StartMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\StartMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab2_.GamePole" Collapsed="true">
+    <Position X="10" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEGAAIoAAFAQEAAAIAA3AAgAAAAARAoYQBAAAQQAEAA=</HashCode>
+      <FileName>GamePole.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="GamePoleController" />
+      <Property Name="GameHistory" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Lab2_.Command.GamePoleMoveUpCommand" Collapsed="true">
-    <Position X="9.25" Y="0.5" Width="2.5" />
+  <Class Name="Lab2_.Memento" Collapsed="true">
+    <Position X="12" Y="11.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\GamePoleMoveUpCommand.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="GamePole" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Lab2_.Command.GamePoleMoveDownCommand" Collapsed="true">
-    <Position X="9.25" Y="2" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\GamePoleMoveDownCommand.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="GamePole" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Lab2_.Command.GamePoleMoveRightCommand" Collapsed="true">
-    <Position X="9.25" Y="1.25" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\GamePoleMoveRightCommand.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="GamePole" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Lab2_.Command.GamePoleMoveLeftCommand" Collapsed="true">
-    <Position X="9.25" Y="2.75" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\GamePoleMoveLeftCommand.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="GamePole" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Lab2_.Robotss.WorkingRobot" Collapsed="true">
-    <Position X="4.25" Y="2" Width="1.5" />
-    <AssociationLine Name="GamePole" Type="Lab2_.GamePole" ManuallyRouted="true">
-      <Path>
-        <Point X="4.438" Y="2.691" />
-        <Point X="4.438" Y="2.941" />
-        <Point X="0.222" Y="2.941" />
-        <Point X="0.222" Y="0.201" />
-        <Point X="6.438" Y="0.201" />
-        <Point X="6.438" Y="0.75" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Robotss\WorkingRobot.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="GamePole" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Lab2_.Robotss.SmartRobot" Collapsed="true">
-    <Position X="2.5" Y="2" Width="1.5" />
-    <AssociationLine Name="GamePole1" Type="Lab2_.GamePole" ManuallyRouted="true">
-      <Path>
-        <Point X="2.812" Y="2.691" />
-        <Point X="2.812" Y="2.941" />
-        <Point X="0.233" Y="2.941" />
-        <Point X="0.233" Y="0.201" />
-        <Point X="6.438" Y="0.201" />
-        <Point X="6.438" Y="0.75" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.018" Y="0.068" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Robotss\SmartRobot.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="GamePole1" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Lab2_.Robotss.Robots" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Robotss\Robots.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAABAAAAAACAAAgAAAAABAAAAAAAAAAE=</HashCode>
+      <FileName>StateController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab2_.Robotss.CyborgRobot" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
-    <AssociationLine Name="GamePole1" Type="Lab2_.GamePole" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="0.625" Y="2" />
-        <Point X="0.625" Y="0.201" />
-        <Point X="6.438" Y="0.201" />
-        <Point X="6.438" Y="0.75" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.027" Y="0.093" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="Lab2_.GameHistory" Collapsed="true">
+    <Position X="13.75" Y="11.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Robotss\CyborgRobot.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>StateController.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="GamePole1" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Lab2_.Command.GamePoleController" Collapsed="true">
-    <Position X="9" Y="4.25" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAEAAAABAAAAAAAAAAAAAAAAAAAAAAAIQAAACEAAAAA=</HashCode>
-      <FileName>Command\GamePoleController.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="moveLeft" />
-    </ShowAsAssociation>
   </Class>
   <Interface Name="Lab2_.Command.ICommand" Collapsed="true">
-    <Position X="7.5" Y="3.25" Width="1.5" />
+    <Position X="11.5" Y="14.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Command\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Lab2_.State.IGameState" Collapsed="true">
+    <Position X="3.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\IGameState.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

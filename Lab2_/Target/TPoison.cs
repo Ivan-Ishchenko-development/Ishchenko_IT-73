@@ -4,10 +4,18 @@ using System.Text;
 
 namespace Lab2_.Target
 {
-    class TPoison : Targets
+    public class TPoison : Targets
     {
         public TPoison()
             : base("P")
         { }
+
+        public TDecodingCreator TDecodingCreator
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

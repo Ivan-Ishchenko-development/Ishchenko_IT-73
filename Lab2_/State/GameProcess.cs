@@ -6,7 +6,7 @@ using Lab2_.Command;
 
 namespace Lab2_.State
 {
-    class GameProcess : IGameState
+    public class GameProcess : IGameState
     {
         public GamePole pole { get; private set; }
         public Robots robot { get; private set; }
@@ -22,9 +22,9 @@ namespace Lab2_.State
         }
         public void NextStage(Game game)
         {
-            game.State = new EndGame(pole,robot);
+            Console.Clear();
+            game.State = new EndGame(pole);
             
-                 
         }
         public void Turn(Game game, ConsoleKey key)
         {

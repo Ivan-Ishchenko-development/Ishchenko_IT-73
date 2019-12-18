@@ -5,17 +5,16 @@ using Lab2_.Robot;
 
 namespace Lab2_.State
 {
-    class EndGame : IGameState
+    public class EndGame : IGameState
     {
-        
-        GamePole pole;
-        Robots robot;
 
-        public EndGame(GamePole pole, Robots robot)
+        public GamePole pole { get; private set; } 
+        public ConsoleKey key { get; private set; } 
+
+        public EndGame(GamePole pole)
         {
             this.pole = pole;
-            Console.Clear();
-            Console.WriteLine("      Это конец игры , спасибо что доиграли до конца {0} )\n", robot.name_hero);
+            Console.WriteLine("      Это конец игры , спасибо что доиграли до конца  )\n");
             pole.ShowState();
             System.Threading.Thread.Sleep(5000);
 
@@ -28,6 +27,7 @@ namespace Lab2_.State
         }
         public void Turn(Game game, ConsoleKey key)
         {
+            this.key = key;
             if (key == ConsoleKey.S)
             {
                 game.NextStage();
